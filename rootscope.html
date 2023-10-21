@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		AngularJS | Scope
+	</title>
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+	</script>
+</head>
+
+<body ng-app="gfg" style="background-color:rgb(29, 178, 198);">
+	<h1>OneAssistMonetaryConsultant</h1>
+	<p>personal and home</p>
+	<h3>{{relation}}</h3>
+
+	<div ng-controller="control">
+
+		<p>Management and Sales </p>
+		<h3>{{relation}}</h3>
+
+	</div>
+
+	<p>car and vehicle</p>
+	<h3>{{relation}}</h3>
+
+	<script>
+		var geeks = angular.module('gfg', []);
+		geeks.run(function($rootScope) {
+			$rootScope.relation = 'loan';
+		});
+		geeks.controller('control', function($scope) {
+			$scope.relation = "team";
+		});
+	</script>
+
+</body>
+
+</html>

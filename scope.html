@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+	AngularJS | Scope
+	</title>
+	<script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+	</script>
+</head>
+
+<body>
+
+	<div ng-app="gfg" ng-controller="control" align="center">
+7
+		<h1 style="color:green;">{{organization}}</h1>
+		<p>A Loan Portal</p>
+	</div>
+
+	<script>
+		var geeks = angular.module('gfg', []);
+		geeks.controller('control', function($scope) {
+			$scope.organization = "sample";
+		});
+	</script>
+
+</body>
+
+</html>

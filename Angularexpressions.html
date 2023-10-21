@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+    </script>
+    <title>AngularJS Expression</title>
+</head>
+  
+<body>
+    <h1 style="color:green">
+        OneAssistMonetaryConsultant
+    </h1>
+    <h3>AngularJS Expressions</h3>
+    <div ng-app="" 
+         ng-init="sort={one:'quick sort',
+                two:'merge sort',
+            three:'bubble sort'}">
+  
+        <p> Sorting Algorithms:</p>
+        <ul>
+            <li>{{ sort.one }}</li>
+            <li>{{ sort.three }}</li>
+            <li>{{ sort.two }}</li>
+        </ul>
+    </div>
+</body>
+  
+</html>
+
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+    </script>
+</head>
+  
+<body>
+    <right>
+        <h1 style="color:rgb(75, 39, 204)">
+            OneAssistMonetaryConsultant
+        </h1>
+        <h3 style="color:green">
+            AngularJS Expressions
+        </h3>
+        <div ng-app="" ng-init="data={Course:'AngularJS',
+                      topic:'Expression'}">
+  
+            <p>This is
+                <span ng-bind="data.Course"></span>
+                <span ng-bind="data.topic"></span>
+                Tutorial
+            </p>
+  
+        </div>
+    </right>
+</body>
+  
+

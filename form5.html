@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<div ng-app="">
+  <form>
+    Check it:
+    <input type="checkbox" ng-model="myVar">
+  </form>
+  <h1 ng-show="myVar">one assist</h1>
+</div>
+
+<p>welcome Customer.</p>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body ng-app="">
+
+<form>
+  Pick a topic:
+  <input type="radio" ng-model="myVar" value="loans">pl,hl,bl
+  <input type="radio" ng-model="myVar" value="credit">credit score
+  <input type="radio" ng-model="myVar" value="review">review and ratings
+</form>
+
+<div ng-switch="myVar">
+  <div ng-switch-when="loans">
+     <h1>pl,hl,bl</h1>
+     <p>these are the different types of loan we offer.</p>
+  </div>
+  <div ng-switch-when="credit">
+     <h1>credit score</h1>
+     <p>view your credit score.</p>
+  </div>
+  <div ng-switch-when="review">
+     <h1>review and ratings</h1>
+     <p>please give 5 star ratings.</p>
+  </div>
+</div>
+
+<p>The ng-switch directive hides and shows HTML sections depending on the value of the radio buttons.</p>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Date Filter</title>
+		
+		<script src=
+"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+		</script>
+	</head>
+	
+	<body>
+
+		<div ng-app="gfgApp" ng-controller="dateCntrl">
+			
+
+<p>{{ today | date : "dd.MM.y" }}</p>
+
+
+		</div>
+
+		<script>
+			var app = angular.module('gfgApp', []);
+			app.controller('dateCntrl', function($scope) {
+				$scope.today = new Date();
+			});
+		</script>
+	</body>
+</html>
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet"
+		href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+	</script>
+	<style>
+
+	.pad {
+		margin: 0 0 0 0;
+	}
+	</style>
+
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+
+	<div class="w3-container ">
+	
+	<p class="w3-jumbo w3-text-green pad"
+	align="center">One Assist</p>
+
+
+	
+	<p class="w3-large w3-text-green pad"
+	align="center" >
+	A Monetary Consultant</p>
+
+
+	<form>
+	
+		<h3 align="center" > Enter user details </h3>
+	
+		<label>First Name:</label>
+		<input class="w3-input w3-border w3-round-xxlarge"
+			type="text"
+			ng-model="fname"
+			placeholder="First Name"></br>
+	
+		<label>Last Name:</label>
+		<input class="w3-input w3-border w3-round-xxlarge"
+			type="text"
+			ng-model="lname"
+			placeholder="Last Name"></br>
+	
+		<label>Email id:</label>
+		<input class="w3-input w3-border w3-round-xxlarge"
+			type="email"
+			ng-model="mail"
+			placeholder="Email id"></br>
+	
+		<label>Password:</label>
+		<input class="w3-input w3-border w3-round-xxlarge"
+			type="password"
+			ng-model="pass"
+			placeholder="Password"></br>
+	
+		<p align="center"> 
+		<button class="w3-btn w3-green w3-ripple " >
+			Save </button></p>
+
+
+
+	</form>
+
+	<script>
+		var app = angular.module('myApp', []);
+		app.controller('myCtrl', function($scope) {
+			$scope.fname = "Fname";
+			$scope.lname = "Lname";
+			$scope.mail = "user@geeksforgeeks.com";
+			$scope.pass = "password";
+		});
+	</script>
+</body>
+</html>

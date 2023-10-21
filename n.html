@@ -1,0 +1,18 @@
+import { FormsModule } from '@angular/forms'; 
+imports: [
+    BrowserModule,
+    FormsModule,
+  ],
+<form> 
+    <input id="myVar" type="checkbox" ngModel name="myVar" #myVar="ngModel"> 
+    <p>The checkbox is selected: {{myVar.value}}</p> 
+<br /> 
+    <select ngModel name="mychoice" #myChoice="ngModel"> 
+        <option>A</option> 
+        <option>E</option> 
+        <option>I</option> 
+        <option>O</option> 
+        <option>U</option> 
+    </select> 
+    <p>The selected option from Dropdown {{ myChoice.value }}</p> 
+</form> 
