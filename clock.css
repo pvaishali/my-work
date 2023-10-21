@@ -1,0 +1,13 @@
+body{
+    background: linear-gradient(115deg,rgba(138,43,226,0.1),rgba(138,43,226,0.7)),url(/anaclock.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
